@@ -1,0 +1,124 @@
+/* RESET (removes ugly default spacing) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px;
+}
+
+/* MAIN CONTAINER LOOK */
+body > * {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 36px;
+  color: #1e2a38;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+/* PROFILE IMAGE */
+img {
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 3px solid #ddd;
+}
+
+/* TEXT */
+p {
+  margin-bottom: 15px;
+}
+
+/* LISTS */
+ul {
+  margin-left: 0;          /* remove default browser indent */
+  padding-left: 20px;      /* controlled spacing inside the box */
+  margin-bottom: 20px;
+  list-style-position: inside; /* THIS pulls bullets into the box */
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* NESTED LISTS */
+ul ul {
+  margin-top: 8px;
+}
+
+/* LINKS */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+/* BUTTON-LIKE LINKS (optional feel) */
+a[href$=".html"] {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* SECTION SPACING */
+section {
+  margin-bottom: 25px;
+}
+
+/* CARD EFFECT (makes sections pop slightly) */
+h2 + ul,
+h2 + p {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+/* HOVER EFFECT FOR EXPERIENCE */
+li:hover {
+  transform: translateX(3px);
+  transition: 0.2s;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
